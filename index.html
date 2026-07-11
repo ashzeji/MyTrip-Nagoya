@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>My Trip to Nagoya</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<style>
+		/* --- New CSS added for this website (requirement d) --- */
+		#template-credit {
+			background: #fff3cd;
+			color: #7a5b12;
+			border: 2px solid #e0b84b;
+			border-radius: 8px;
+			text-align: center;
+			font-size: 15px;
+			padding: 10px;
+			margin: 15px 0;
+		}
+		#welcome-message {
+			background: linear-gradient(135deg, #b23a48, #e08a3e);
+			color: #fff;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			padding: 20px;
+			border-radius: 12px;
+			box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+			margin: 20px 0;
+			opacity: 0;
+			transition: opacity 1.2s ease-in;
+		}
+		#trip-calculator {
+			background: #f4ede1;
+			border: 2px solid #316e66;
+			border-radius: 10px;
+			padding: 20px;
+			margin: 20px 0;
+			text-align: center;
+		}
+		#trip-calculator h3 {
+			color: #316e66;
+			margin-top: 0;
+		}
+		#trip-calculator input {
+			padding: 6px;
+			margin: 5px;
+			border-radius: 4px;
+			border: 1px solid #316e66;
+		}
+		#trip-calculator button {
+			background: #316e66;
+			color: #fff;
+			border: none;
+			padding: 8px 16px;
+			border-radius: 4px;
+			cursor: pointer;
+			margin: 5px;
+		}
+		#trip-calculator button:hover {
+			background: #24504a;
+		}
+		#daysResult {
+			font-weight: bold;
+			color: #b23a48;
+			font-size: 17px;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="background">
+		<div id="page">
+			<div id="header">
+				<div id="logo">
+					<a href="index.html"><img src="images/logo.png" alt="LOGO" height="112" width="118"></a>
+				</div>
+				<div id="navigation">
+					<ul>
+						<li class="selected">
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="about.html">About</a>
+						</li>
+						<li>
+							<a href="rooms.html">Stayed</a>
+						</li>
+						<li>
+							<a href="dives.html">Places</a>
+						</li>
+						<li>
+							<a href="foods.html">Food</a>
+						</li>
+						<li>
+							<a href="news.html">Diary</a>
+						</li>
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="contents">
+
+				<!-- Visible link to original template (requirement e) -->
+				<div id="template-credit">
+					This website was built by modifying a free template. View the
+					<a href="PASTE_EXACT_TEMPLATE_URL_HERE" target="_blank">original template here</a>.
+				</div>
+
+				<!-- Welcome message inserted via JS (requirement a) -->
+				<div id="welcome-message"></div>
+
+				<div id="adbox">
+					<img src="images/sea-sound.jpg" alt="Img">
+					<h1>My Trip to Nagoya</h1>
+					<p>
+						Write a short intro here about your trip — when you went, why you chose Nagoya, and what this website covers.
+					</p>
+				</div>
+
+				<!-- Custom JS function (requirement c) -->
+				<div id="trip-calculator">
+					<h3>How many days ago was my trip?</h3>
+					<input type="date" id="tripDateInput" value="2026-06-12">
+					<button onclick="calculateDaysAgo()">Calculate</button>
+					<p id="daysResult"></p>
+				</div>
+
+				<div id="main">
+					<div class="box">
+						<div>
+							<div>
+								<h3>Trip Diary</h3>
+								<ul>
+									<li>
+										<h4><a href="news.html">Day 1: Arriving in Nagoya</a></h4>
+										<span>Write the date here</span>
+										<p>
+											Write a short preview of your first day here...
+										</p>
+									</li>
+									<li>
+										<h4><a href="news.html">Nagoya Castle Visit</a></h4>
+										<span>Write the date here</span>
+										<p>
+											Write a short preview about visiting the castle here...
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="testimonials" class="box">
+						<div>
+							<div>
+								<h3>Highlights</h3>
+								<p>
+									Write a favorite quote or memory from your trip here. <span>- Your Name</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="sidebar">
+					<div class="section">
+						<a href="rooms.html"><img src="images/rooms.png" alt="Img"></a>
+					</div>
+					<div class="section">
+						<a href="dives.html"><img src="images/dive-site.png" alt="Img"></a>
+					</div>
+					<div class="section">
+						<a href="foods.html"><img src="images/food.png" alt="Img"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div>
+				<ul class="navigation">
+					<li class="active">
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="rooms.html">Stayed</a>
+					</li>
+					<li>
+						<a href="dives.html">Places</a>
+					</li>
+					<li>
+						<a href="foods.html">Food</a>
+					</li>
+					<li>
+						<a href="news.html">Diary</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<p>
+				ID: 24229018 | Name: Ashidbileg Erdenejav
+			</p>
+		</div>
+	</div>
+
+	<!-- Welcome message + custom JS function scripts (index.html only) -->
+	<script>
+		window.onload = function() {
+			const hour = new Date().getHours();
+			let greeting;
+			if (hour < 12) {
+				greeting = "Good morning! Welcome to my Nagoya trip website ☀️";
+			} else if (hour < 18) {
+				greeting = "Good afternoon! Welcome to my Nagoya trip website 🏯";
+			} else {
+				greeting = "Good evening! Welcome to my Nagoya trip website 🌙";
+			}
+			const msg = document.getElementById("welcome-message");
+			msg.innerText = greeting;
+			setTimeout(function() {
+				msg.style.opacity = 1;
+			}, 300);
+		};
+
+		function calculateDaysAgo() {
+			const inputDate = new Date(document.getElementById("tripDateInput").value);
+			const today = new Date();
+			const diffTime = today - inputDate;
+			const diffDays = Math.round(diffTime / (1000 * 60 * 60 * 24));
+
+			if (isNaN(diffDays)) {
+				document.getElementById("daysResult").innerText = "Please pick a valid date!";
+			} else if (diffDays < 0) {
+				document.getElementById("daysResult").innerText = "That date is in the future!";
+			} else if (diffDays === 0) {
+				document.getElementById("daysResult").innerText = "That's today!";
+			} else {
+				document.getElementById("daysResult").innerText = "That was " + diffDays + " day(s) ago!";
+			}
+		}
+	</script>
+</body>
+</html>
