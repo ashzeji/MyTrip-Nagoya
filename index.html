@@ -122,7 +122,7 @@
 
 				<!-- Custom JS function (requirement c) -->
 				<div id="trip-calculator">
-					<h3>How many days ago was my trip?</h3>
+					<h3>If you were to visit Nagoya, when would you go?</h3>
 					<input type="date" id="tripDateInput" value="2026-06-12">
 					<button onclick="calculateDaysAgo()">Calculate</button>
 					<p id="daysResult"></p>
@@ -142,7 +142,7 @@
 										</p>
 									</li>
 									<li>
-										<h4><a href="news.html">Nagoya Castle Visit</a></h4>
+										<h4><a href="news.html">Day 2: Visit to Nagashima Spa Land</a></h4>
 										<span>Write the date here</span>
 										<p>
 											Write a short preview about visiting the castle here...
@@ -152,7 +152,7 @@
 							</div>
 						</div>
 					</div>
-					<div id="testimonials" class="box">
+					<div id="Highlights" class="box">
 						<div>
 							<div>
 								<h3>Highlights</h3>
@@ -213,12 +213,12 @@
 		window.onload = function() {
 			const hour = new Date().getHours();
 			let greeting;
-			if (hour < 12) {
-				greeting = "Good morning! Welcome to my Nagoya trip website ☀️";
-			} else if (hour < 18) {
-				greeting = "Good afternoon! Welcome to my Nagoya trip website 🏯";
+			if (hour < 12:00) {
+				greeting = "Good morning! Welcome to my Nagoya trip website !";
+			} else if (hour < 18:00) {
+				greeting = "Good afternoon! Welcome to my Nagoya trip website !";
 			} else {
-				greeting = "Good evening! Welcome to my Nagoya trip website 🌙";
+				greeting = "Good evening! Welcome to my Nagoya trip website !";
 			}
 			const msg = document.getElementById("welcome-message");
 			msg.innerText = greeting;
