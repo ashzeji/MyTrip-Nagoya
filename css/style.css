@@ -151,8 +151,19 @@ img {
 	margin: 0 auto;
 	padding: 4px 5px 18px;
 }
+#adbox h1 {
+	background-color: #ffffff;
+	display: inline-block;
+	padding: 8px 14px;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
 #adbox p {
+	background-color: #ffffff;
+	display: inline-block;
 	font-size: 16px;
+	padding: 10px 14px;
+	border-radius: 4px;
 }
 .ads {
 	float: right;
